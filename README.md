@@ -34,6 +34,10 @@ Este proyecto implementa un formulario de "Libro de Reclamaciones Virtual" en Wo
 2. Inserta el código CSS disponible en el archivo `style.css`. Puedes encontrar el código aquí: [style.css](style.css).
 3. Guarda los cambios.
 
+## Demostración
+
+![Vista previa del Libro de Reclamaciones](libro-de-reclamaciones-virtual.png)
+
 ## Pruebas y Compatibilidad
 
 Este formulario ha sido probado con los siguientes elementos:
