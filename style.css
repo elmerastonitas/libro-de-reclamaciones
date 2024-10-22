@@ -1,0 +1,53 @@
+/* Personalizar campos de Contact Form 7 */
+
+/* Estilos generales para el formulario */
+.name-form {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permitir que los elementos se ajusten en múltiples líneas si es necesario */
+  justify-content: space-between;
+  /* Espacio entre los elementos */
+  margin-bottom: 20px;
+  /* Espacio inferior del formulario */
+}
+
+.form-group {
+  flex: 1;
+  /* Cada grupo ocupa el mismo espacio */
+  margin: 0 10px;
+  /* Espacio lateral entre los grupos */
+}
+
+.wpcf7-form-control {
+  width: 100%;
+  /* Campo de entrada ocupa todo el ancho del grupo */
+  padding: 12px;
+  /* Espaciado interno */
+  border-radius: 30px;
+  /* Bordes redondeados */
+  border: 1px solid #ccc;
+  /* Borde */
+}
+
+label {
+  display: block;
+  /* Asegura que la etiqueta esté en su propia línea */
+  margin-bottom: 5px;
+  /* Espacio inferior de la etiqueta */
+  font-weight: bold;
+  /* Opcional: hace que la etiqueta sea más visible */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+  /* Cambia el valor según el ancho máximo deseado para móviles */
+  .name-form {
+    flex-direction: column;
+    /* Cambia a columna para dispositivos móviles */
+  }
+
+  .form-group {
+    margin: 5px 0;
+    /* Espacio entre los campos en vertical */
+  }
+}
