@@ -1,237 +1,195 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulario de Libro de Reclamaciones Virtual</title>
 
-    <!--CSS -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Libro de Reclamaciones Virtual</title>
 
-  <body>
-    <h1>Libro de Reclamaciones Virtual</h1>
+  <!--CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- Inicio de Formulario-->
+<body>
+  <h1>Libro de Reclamaciones Virtual</h1>
+
+  <!-- Inicio de Formulario-->
+  <p>
+    Siguiendo lo dispuesto establecido en el Reglamento del Libro de
+    Reclamaciones del Código de Protección y Defensa del Consumidor, hemos
+    habilitado el Libro de Reclamaciones Virtual en nuestro sitio web, permite
+    a los consumidores presentar Quejas y Reclamos.
+  </p>
+
+  <p>
+    Para aquellos usuarios que opten por presentar sus reclamos o quejas en
+    línea a través de los medios brindados en ..., completar el
+    formulario siguiente:
+  </p>
+
+  <h2>1. Identificación del consumidor reclamante</h2>
+
+  <label> [radio minor-radio id:minor-radio "Soy menor de edad"] </label>
+
+  <div class="minor-checkbox" style="display: none">
+    <div class="name-form">
+      <div class="form-group">
+        <label for="document-type-2">Tipo de documento [select document-type-2 "DNI" "Pasaporte" "Carnet
+          de Extranjería" "RUC"]</label>
+      </div>
+      <div class="form-group">
+        <label for="document-number-2">Nº de documento [text document-number-2 placeholder "Nº de
+          documento"]</label>
+      </div>
+    </div>
+
+    <div class="name-form">
+      <div class="form-group">
+        <label for="first-name-2">Nombres [text first-name-2 placeholder "Nombres"]</label>
+      </div>
+      <div class="form-group">
+        <label for="last-name-2">Apellidos [text last-name-2 placeholder "Apellidos"]</label>
+      </div>
+    </div>
     <p>
-      Siguiendo lo dispuesto establecido en el Reglamento del Libro de
-      Reclamaciones del Código de Protección y Defensa del Consumidor, hemos
-      habilitado el Libro de Reclamaciones Virtual en nuestro sitio web, permite
-      a los consumidores presentar Quejas y Reclamos.
+      <strong>Complete los campos siguientes con los datos del padre, madre o
+        representante del menor:</strong>
     </p>
+  </div>
 
-    <p>
-      Para aquellos usuarios que opten por presentar sus reclamos o quejas en
-      línea a través de los medios brindados en ..., completar el
-      formulario siguiente:
-    </p>
-
-    <h2>1. Identificación del consumidor reclamante</h2>
-
-    <label> [radio minor-radio id:minor-radio "Soy menor de edad"] </label>
-
-    <div class="minor-checkbox" style="display: none">
-      <div class="name-form">
-        <div class="form-group">
-          <label for="document-type-2"
-            >Tipo de documento [select document-type-2 "DNI" "Pasaporte" "Carnet
-            de Extranjería" "RUC"]</label
-          >
-        </div>
-        <div class="form-group">
-          <label for="document-number-2"
-            >Nº de documento [text document-number-2 placeholder "Nº de
-            documento"]</label
-          >
-        </div>
-      </div>
-
-      <div class="name-form">
-        <div class="form-group">
-          <label for="first-name-2"
-            >Nombres [text first-name-2 placeholder "Nombres"]</label
-          >
-        </div>
-        <div class="form-group">
-          <label for="last-name-2"
-            >Apellidos [text last-name-2 placeholder "Apellidos"]</label
-          >
-        </div>
-      </div>
-      <p>
-        <strong
-          >Complete los campos siguientes con los datos del padre, madre o
-          representante del menor:</strong
-        >
-      </p>
+  <div class="name-form">
+    <div class="form-group">
+      <label for="first-name">Nombres [text* first-name placeholder "Nombres"]</label>
     </div>
-
-    <div class="name-form">
-      <div class="form-group">
-        <label for="first-name"
-          >Nombres [text* first-name placeholder "Nombres"]</label
-        >
-      </div>
-      <div class="form-group">
-        <label for="last-name"
-          >Apellidos [text* last-name placeholder "Apellidos"]</label
-        >
-      </div>
+    <div class="form-group">
+      <label for="last-name">Apellidos [text* last-name placeholder "Apellidos"]</label>
     </div>
+  </div>
 
-    <div class="name-form">
-      <div class="form-group">
-        <label for="type-document"
-          >Tipo de documento [select* document-type "DNI" "Pasaporte" "Carnet de
-          Extranjería" "RUC"]
-        </label>
-      </div>
-      <div class="form-group">
-        <label for="document-number"
-          >Nº Documento [text* last-name placeholder "Nº Documento"]</label
-        >
-      </div>
-      <div class="form-group">
-        <label for="phone">Teléfono [tel* phone placeholder "Teléfono"]</label>
-      </div>
-      <div class="form-group">
-        <label for="email"
-          >Correo electrónico [email* your-email placeholder "Correo
-          electrónico"]</label
-        >
-      </div>
+  <div class="name-form">
+    <div class="form-group">
+      <label for="type-document">Tipo de documento [select* document-type "DNI" "Pasaporte" "Carnet de
+        Extranjería" "RUC"]
+      </label>
     </div>
-
-    <div class="name-form">
-      <div class="form-group">
-        <label for="department"
-          >Departamento [text* department placeholder "Departamento"]</label
-        >
-      </div>
-      <div class="form-group">
-        <label for="province"
-          >Provincia [text* province placeholder "Provincia"]</label
-        >
-      </div>
-      <div class="form-group">
-        <label for="district"
-          >Distrito [tel* district placeholder "Distrito"]</label
-        >
-      </div>
+    <div class="form-group">
+      <label for="document-number">Nº Documento [text* last-name placeholder "Nº Documento"]</label>
     </div>
-
-    <div class="name-form">
-      <div class="form-group">
-        <label for="address"
-          >Dirección [text* address placeholder "Dirección"]</label
-        >
-      </div>
+    <div class="form-group">
+      <label for="phone">Teléfono [tel* phone placeholder "Teléfono"]</label>
     </div>
-
-    <h2>2. Identificación del bien contratado</h2>
-
-    <div class="name-form">
-      <div class="form-group">
-        <label for="purchase-date" style="line-height: 2.5"
-          >Fecha de compra [date* purchase-date]</label
-        >
-      </div>
-      <div class="form-group">
-        <label for="tWell-hired-guy" style="line-height: 2.5"
-          >Tipo bien contratado [select* Well-hired-guy "Producto"
-          "Servicio"]</label
-        >
-      </div>
-      <div class="form-group">
-        <label for="stores" style="line-height: 2.5"
-          >Tienda [select* stores "tienda.com"]</label
-        >
-      </div>
-      <div class="form-group">
-        <label for="amount-claimed" style="line-height: 2.5"
-          >Monto reclamado S/ [text* amount-claimed id:amount-claimed
-          placeholder "Ejm: 120.25"]</label
-        >
-      </div>
+    <div class="form-group">
+      <label for="email">Correo electrónico [email* your-email placeholder "Correo
+        electrónico"]</label>
     </div>
+  </div>
 
-    <div class="name-form">
-      <div class="form-group">
-        <label for="description-of-product-or-service"
-          >Descripción [textarea* description-of-product-or-service placeholder
-          "Descripción de producto o servicio"]</label
-        >
-      </div>
+  <div class="name-form">
+    <div class="form-group">
+      <label for="department">Departamento [text* department placeholder "Departamento"]</label>
     </div>
-
-    <h2>3. Detalle de la reclamación y pedido del consumidor</h2>
-
-    <div class="name-form">
-      <div class="form-group">
-        <label>Motivo [select* reason include_blank "Queja" "Reclamo"]</label>
-      </div>
+    <div class="form-group">
+      <label for="province">Provincia [text* province placeholder "Provincia"]</label>
     </div>
-
-    <div class="name-form">
-      <div class="form-group">
-        <label
-          >Detalle [textarea* Complaint-or-claim-details placeholder "Cuéntanos
-          sobre la situación que ha originado tu queja o reclamo."]</label
-        >
-      </div>
+    <div class="form-group">
+      <label for="district">Distrito [tel* district placeholder "Distrito"]</label>
     </div>
+  </div>
 
-    <div class="name-form">
-      <div class="form-group">
-        <label
-          >Pedido del Reclamante [textarea* claim-request placeholder "¿Qué
-          solicitas? Por favor, especifica tu petición."]</label
-        >
-      </div>
+  <div class="name-form">
+    <div class="form-group">
+      <label for="address">Dirección [text* address placeholder "Dirección"]</label>
     </div>
+  </div>
 
-    <h2>4. Observaciones y acciones adoptadas por el proveedor</h2>
+  <h2>2. Identificación del bien contratado</h2>
 
-    <p>
-      La respuesta a su reclamo o queja, presentado en Libro de Reclamaciones
-      Virtual, se enviará a la dirección de correo electrónico que haya
-      proporcionado.
-    </p>
+  <div class="name-form">
+    <div class="form-group">
+      <label for="purchase-date" style="line-height: 2.5">Fecha de compra [date* purchase-date]</label>
+    </div>
+    <div class="form-group">
+      <label for="tWell-hired-guy" style="line-height: 2.5">Tipo bien contratado [select* Well-hired-guy "Producto"
+        "Servicio"]</label>
+    </div>
+    <div class="form-group">
+      <label for="stores" style="line-height: 2.5">Tienda [select* stores "tienda.com"]</label>
+    </div>
+    <div class="form-group">
+      <label for="amount-claimed" style="line-height: 2.5">Monto reclamado S/ [text* amount-claimed id:amount-claimed
+        placeholder "Ejm: 120.25"]</label>
+    </div>
+  </div>
 
-    <ul>
-      <li>
-        La formulación del reclamo no impide acudir a otras vías de solución de
-        controversias ni es requisito previo para interponer una denuncia ante
-        el INDECOPI.
-      </li>
-      <li>
-        El proveedor debe dar respuesta al reclamo o queja en un plazo no mayor
-        a quince (15) días hábiles, el cual es improrrogable.
-      </li>
-    </ul>
+  <div class="name-form">
+    <div class="form-group">
+      <label for="description-of-product-or-service">Descripción [textarea* description-of-product-or-service
+        placeholder
+        "Descripción de producto o servicio"]</label>
+    </div>
+  </div>
 
-    <p style="font-style: italic">
-      Si falta información, como nombre, DNI, dirección, correo, reclamo o
-      detalles, según el artículo 5 del Reglamento de Reclamaciones, su reclamo
-      o queja no se considerará presentado.
-    </p>
+  <h2>3. Detalle de la reclamación y pedido del consumidor</h2>
 
-    <label
-      >Si dispones de documentos que respalden tu queja o reclamo, puedes
-      adjuntarlo (opcional) [file supporting-document limit:10000
-      filetypes:pdf|png|jpg|jpeg|docx]</label
-    >
+  <div class="name-form">
+    <div class="form-group">
+      <label>Motivo [select* reason include_blank "Queja" "Reclamo"]</label>
+    </div>
+  </div>
 
-    [acceptance accept-tyc optional] He leído y acepto la
-    <a href="/politica-de-privacidad" target="_blank"
-      >Política de Privacidad [/acceptance]</a
-    >
+  <div class="name-form">
+    <div class="form-group">
+      <label>Detalle [textarea* Complaint-or-claim-details placeholder "Cuéntanos
+        sobre la situación que ha originado tu queja o reclamo."]</label>
+    </div>
+  </div>
 
-    [submit id:submit-button "Enviar"]
+  <div class="name-form">
+    <div class="form-group">
+      <label>Pedido del Reclamante [textarea* claim-request placeholder "¿Qué
+        solicitas? Por favor, especifica tu petición."]</label>
+    </div>
+  </div>
 
-    <!-- Fin de Formulario -->
+  <h2>4. Observaciones y acciones adoptadas por el proveedor</h2>
 
-    <!--JavaScript -->
-    <script src="script.js"></script>
-  </body>
+  <p>
+    La respuesta a su reclamo o queja, presentado en Libro de Reclamaciones
+    Virtual, se enviará a la dirección de correo electrónico que haya
+    proporcionado.
+  </p>
+
+  <ul>
+    <li>
+      La formulación del reclamo no impide acudir a otras vías de solución de
+      controversias ni es requisito previo para interponer una denuncia ante
+      el INDECOPI.
+    </li>
+    <li>
+      El proveedor debe dar respuesta al reclamo o queja en un plazo no mayor
+      a quince (15) días hábiles, el cual es improrrogable.
+    </li>
+  </ul>
+
+  <p style="font-style: italic">
+    Si falta información, como nombre, DNI, dirección, correo, reclamo o
+    detalles, según el artículo 5 del Reglamento de Reclamaciones, su reclamo
+    o queja no se considerará presentado.
+  </p>
+
+  <label>Si dispones de documentos que respalden tu queja o reclamo, puedes
+    adjuntarlo (opcional) [file supporting-document limit:10000
+    filetypes:pdf|png|jpg|jpeg|docx]</label>
+
+  [acceptance accept-tyc optional] He leído y acepto la
+  <a href="/politica-de-privacidad" target="_blank">Política de Privacidad [/acceptance]</a>
+
+  [submit id:submit-button "Enviar"]
+
+  <!-- Fin de Formulario -->
+
+  <!--JavaScript -->
+  <script src="script.js"></script>
+</body>
+
 </html>

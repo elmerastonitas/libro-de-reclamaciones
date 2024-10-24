@@ -18,17 +18,6 @@
   /* Espacio lateral entre los grupos */
 }
 
-.wpcf7-form-control {
-  width: 100%;
-  /* Campo de entrada ocupa todo el ancho del grupo */
-  padding: 12px;
-  /* Espaciado interno */
-  border-radius: 30px;
-  /* Bordes redondeados */
-  border: 1px solid #ccc;
-  /* Borde */
-}
-
 label {
   display: block;
   /* Asegura que la etiqueta esté en su propia línea */
@@ -40,6 +29,7 @@ label {
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 600px) {
+
   /* Cambia el valor según el ancho máximo deseado para móviles */
   .name-form {
     flex-direction: column;
